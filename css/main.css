@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 80vh;
+  background: url(../images/bg1.png) no-repeat;
+}
+
+/* 헤더 */
+.header {
+  width: 100%;
+}
+
+.header .container {
+  height: 130px;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.head_text {
+  display: flex;
+  align-items: baseline;
+}
+
+.head_text h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-right: 9px;
+}
+
+.head_text p {
+  color: #b7b7b7;
+}
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  cursor: pointer;
+}
+
+.hamburger span:first-child {
+  width: 56px;
+}
+
+.hamburger span {
+  display: block;
+  width: 41px;
+  height: 3px;
+  background: #606060;
+  margin: 20px 0;
+}
+
+/* 컨텐츠 */
+.content {
+  height: 100%;
+  position: relative;
+}
+
+.wrap {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  line-height: 1.4;
+}
+
+.wrap h2 {
+  color: #1d1d1d;
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+.wrap p {
+  font-size: 24px;
+  color: #878787;
+}
