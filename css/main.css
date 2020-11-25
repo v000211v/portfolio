@@ -33,6 +33,11 @@ body {
   font-size: 40px;
   font-weight: 900;
   margin-right: 9px;
+  transition: all 0.3s;
+}
+
+.head_text h2:hover {
+  color: #999;
 }
 
 .head_text p {
@@ -72,7 +77,7 @@ body {
   top: 60px;
   right: 50px;
   width: 56px;
-  height: 18px;
+  height: 30px;
   /* background: red; */
   cursor: pointer;
   display: flex;
@@ -80,10 +85,18 @@ body {
   justify-content: center;
 }
 
+.bar span {
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  position: relative;
+  transition: background 0.3s;
+}
+
 .bar span::before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -12px;
   left: 0;
   height: 4px;
   width: 100%;
@@ -106,7 +119,7 @@ body {
   background: transparent;
 }
 .bar.on span::before {
-  top: 13px;
+  top: -2px;
   transform: rotate(-45deg);
 }
 .bar.on span::after {

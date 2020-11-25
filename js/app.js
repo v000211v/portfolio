@@ -1,3 +1,20 @@
+// 메뉴
+const bar = document.querySelector('.bar')
+const nav = document.querySelector('.nav')
+const link = document.querySelectorAll('.nav a')
+
+bar.addEventListener('click', function () {
+  bar.classList.toggle('on')
+  nav.classList.toggle('on')
+})
+
+link.forEach((item) => {
+  item.addEventListener('click', function () {
+    bar.classList.remove('on')
+    nav.classList.remove('on')
+  })
+})
+
 // modal
 
 const about = document.querySelector('.about')
