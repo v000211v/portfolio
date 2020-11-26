@@ -13,6 +13,13 @@ link.forEach((item) => {
     bar.classList.remove('on')
     nav.classList.remove('on')
   })
+
+  bar.addEventListener('click', function () {
+    console.log(this)
+
+    about.remove.add('open')
+    modal.classList.add('open')
+  })
 })
 
 // modal
