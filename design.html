@@ -56,23 +56,60 @@
 
     <div class="items">
       <div class="grid">
-        <a href="#" class="grid-item uiux"><img src="./images/movie_app/X - 1 1.png" alt="img" /></a>
+        <div class="grid-sizer"></div>
         <a href="#" class="grid-item banner"><img src="./images/banner/banner1-01.png" alt="img" /></a>
-        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/02.png" alt="img" /></a>
-        <a href="#" class="grid-item banner"><img src="./images/banner/banner3-01.png" alt="img" /></a>
-        <a href="#" class="grid-item uiux"><img src="./images/concert03.png" alt="img" /></a>
-        <a href="#" class="grid-item uiux"><img src="./images/login/1.png" alt="img" /></a>
-        <a href="#" class="grid-item banner"><img src="./images/banner/banner4-01.jpg" alt="img" /></a>
-        <a href="#" class="grid-item banner"><img src="./images/banner/banner5-01.png" alt="img" /></a>
-        <a href="#" class="grid-item banner"><img src="./images/banner/banner2-01.png" alt="img" /></a>
-        <a href="#" class="grid-item web"><img src="./images/banner/web.png" alt="img" /></a>
         <a href="#" class="grid-item banner"><img src="./images/banner/banner1-02.png" alt="img" /></a>
         <a href="#" class="grid-item banner"><img src="./images/banner/banner1-03.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner2-01.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner2-02.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner3-01.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner3-02.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner3-03.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner3-04.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner4-01.jpg" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner4-02.jpg" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner4-03.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner4-04.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner5-01.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/banner5-02.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/1.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/2.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/3.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/4.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/5.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/login/6.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/movie_app/X - 1 1.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/movie_app/X - 3 1.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/movie_app/X - 4 1.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/01.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/02.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/03.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/04.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/05.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/shopping_app/06.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/concert01.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/concert02.png" alt="img" /></a>
+        <a href="#" class="grid-item uiux"><img src="./images/concert03.png" alt="img" /></a>
+        <a href="#" class="grid-item web"><img src="./images/hanhwa.png" alt="img" /></a>
+        <a href="#" class="grid-item banner"><img src="./images/banner/web.png" alt="img" /></a>
       </div>
     </div>
 
     <script src="./js/app.js"></script>
     <script>
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        }
+      })
+      // layout Isotope after each image loads
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope('layout')
+      })
+
       // 필터링
       $('.filter_btns').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter')
