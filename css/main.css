@@ -59,18 +59,19 @@ body {
 
 .nav {
   position: fixed;
-  top: 220px;
+  top: 0px;
   left: 100%;
   width: 30%;
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 250px;
   transition: all 0.5s;
   text-align: center;
-  z-index: 10000;
+  z-index: 10;
 }
 
 .nav.on {
   left: 70%;
+
   background: #fff;
 }
 
@@ -117,6 +118,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .bar span::before {

@@ -195,6 +195,7 @@ body {
 /* contact */
 
 .contact {
+  display: flex;
   flex: 1;
   height: 100%;
   display: flex;
