@@ -29,7 +29,7 @@ body {
 }
 
 .head_text h2:hover {
-  color: #999;
+  color: rgb(135, 184, 230);
 }
 .head_text p {
   color: #b7b7b7;
@@ -59,6 +59,10 @@ body {
   text-align: center;
   padding: 50px 0;
   border-bottom: 2px solid #999;
+  transition: all 0.5s;
+}
+.nav li a:hover {
+  color: rgb(135, 184, 230);
 }
 
 /* hamburger bar */
@@ -130,4 +134,140 @@ body {
   font-size: 20px;
   color: #555;
   line-height: 1.4;
+}
+
+/* 페이지 */
+.page {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 0 30px;
+}
+
+.page_pic {
+  width: 910px;
+  height: 550px;
+  background: #333;
+}
+
+.page_text {
+  width: 670px;
+  margin: 50px 70px;
+}
+
+.page_text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.page_text p {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.page .btns {
+  display: flex;
+  align-items: center;
+}
+
+.page .btn {
+  border: 1px solid #555;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  color: #555;
+  margin-right: 50px;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.page .btn:hover {
+  color: #fff;
+  background: #555;
+}
+
+/* contact */
+
+.contact {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact .content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 460px;
+  color: #777;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 46px;
+}
+
+.gform {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gform label {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.gform input,
+.gform textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: 2px solid #ddd;
+  background: #ffff;
+  outline: none;
+  color: rgb(49, 49, 49);
+  transition: background, border 0.5s;
+}
+
+.gform input::placeholder,
+.gform textarea::placeholder {
+  color: #777;
+  transition: all 0.5s;
+}
+
+.gform input:focus,
+.gform textarea:focus {
+  border: 2px solid #fff;
+  background: rgb(220, 238, 255);
+}
+
+.gform input:focus::placeholder,
+.gform textarea:focus::placeholder {
+  color: transparent;
+}
+
+.gform textarea {
+  resize: vertical;
+}
+
+.btn {
+  background: #555;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

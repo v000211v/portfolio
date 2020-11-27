@@ -29,7 +29,7 @@ body {
 }
 
 .head_text h2:hover {
-  color: #999;
+  color: rgb(135, 184, 230);
 }
 .head_text p {
   color: #b7b7b7;
@@ -162,6 +162,10 @@ body {
   color: rgb(135, 184, 230);
 }
 
+.filter_btn:hover {
+  color: rgb(135, 184, 230);
+}
+
 .filter_btn::after {
   content: '';
   display: block;
@@ -188,10 +192,16 @@ body {
 .grid-item {
   overflow: hidden;
   transition: all 0.3s;
+  position: relative;
 }
 
-.grid-item:hover {
+.grid-item img {
+  transition: all 0.3s;
+}
+
+.grid-item img:hover {
   opacity: 0.5;
+  transform: scale(1.2);
 }
 
 .mfp-bg {
