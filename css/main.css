@@ -90,16 +90,12 @@ body {
 }
 
 /* hamburger bar */
-
-.bar:hover {
-}
-
 .bar {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 50px;
   width: 56px;
-  height: 18px;
+  height: 30px;
   /* background: red; */
   cursor: pointer;
   display: flex;
@@ -115,18 +111,18 @@ body {
   left: 0;
   height: 4px;
   width: 100%;
-  background: #333;
+  background: #666;
   transition: top 0.3s, transform 0.3s;
 }
 
 .bar span::after {
   content: '';
   position: absolute;
-  bottom: -12px;
+  bottom: 0px;
   right: 0;
   height: 4px;
   width: 80%;
-  background: #333;
+  background: #666;
   transition: bottom 0.3s, transform 0.3s;
 }
 
@@ -134,12 +130,12 @@ body {
   background: transparent;
 }
 .bar.on span::before {
-  top: 13px;
+  top: 12px;
   transform: rotate(-45deg);
 }
 .bar.on span::after {
   width: 100%;
-  bottom: 0;
+  bottom: 13px;
   transform: rotate(45deg);
 }
 

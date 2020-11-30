@@ -98,7 +98,7 @@ body {
   top: 60px;
   right: 50px;
   width: 56px;
-  height: 18px;
+  height: 30px;
   /* background: red; */
   cursor: pointer;
   display: flex;
@@ -121,7 +121,7 @@ body {
 .bar span::after {
   content: '';
   position: absolute;
-  bottom: -12px;
+  bottom: 0px;
   right: 0;
   height: 4px;
   width: 80%;
@@ -133,12 +133,12 @@ body {
   background: transparent;
 }
 .bar.on span::before {
-  top: 13px;
+  top: 12px;
   transform: rotate(-45deg);
 }
 .bar.on span::after {
   width: 100%;
-  bottom: 0;
+  bottom: 13px;
   transform: rotate(45deg);
 }
 
