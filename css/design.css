@@ -3,7 +3,29 @@ body {
   font-size: 16px;
 }
 .header {
+  position: fixed;
   width: 100%;
+  background: #fff;
+  z-index: 100000;
+}
+
+.go_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 70px;
+  height: 70px;
+  background: #222;
+  opacity: 0.9;
+  color: #fff;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
 }
 
 .header .container {
@@ -14,6 +36,10 @@ body {
   align-items: center;
   justify-content: space-between;
   background: transparent;
+}
+
+.content {
+  padding-top: 130px;
 }
 
 .head_text {

@@ -12,6 +12,7 @@ body {
 /* 헤더 */
 .header {
   width: 100%;
+  background: #fff;
 }
 
 .header .container {

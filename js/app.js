@@ -22,26 +22,26 @@ link.forEach((item) => {
   })
 })
 
-// modal
+// 헤더 스크립트
+var header = $('.header')
+var goTop = $('.go_top')
 
-const about = document.querySelector('.about')
-const dimm = document.querySelector('.dimm')
-const modal = document.querySelector('.modal')
-const close = document.querySelector('.close')
+$(window).scroll(function () {
+  var scrollTopValue = $(document).scrollTop()
 
-about.addEventListener('click', function () {
-  console.log(this)
+  if (scrollTopValue > 0) {
+    header.addClass('active')
+  } else {
+    header.removeClass('active')
+  }
 
-  dimm.classList.add('open')
-  modal.classList.add('open')
+  if (scrollTopValue > 900) {
+    goTop.fadeIn()
+  } else {
+    goTop.fadeOut()
+  }
 })
 
-close.addEventListener('click', () => {
-  dimm.classList.remove('open')
-  modal.classList.remove('open')
-})
-
-dimm.addEventListener('click', () => {
-  dimm.classList.remove('open')
-  modal.classList.remove('open')
+goTop.click(function () {
+  $('html, body').animate({ scrollTop: 0 }, 400)
 })
