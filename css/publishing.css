@@ -140,7 +140,7 @@ body {
 .page {
   display: flex;
   justify-content: space-between;
-  margin: 150px 0 30px;
+  margin: 150px 0 150px;
 }
 
 .page_pic img {

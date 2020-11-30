@@ -6,7 +6,7 @@ body {
   position: fixed;
   width: 100%;
   background: #fff;
-  z-index: 100000;
+  z-index: 10;
 }
 
 .go_top {
@@ -234,16 +234,4 @@ body {
 .mfp-bg {
   background: #000;
   opacity: 0.86;
-}
-
-/* modal  */
-/* dimm */
-.dimm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
 }
