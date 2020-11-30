@@ -1,20 +1,139 @@
-.go_top {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  width: 70px;
-  height: 70px;
-  background: #222;
-  opacity: 0.9;
-  color: #fff;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.12);
-  border-radius: 50%;
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+.header {
+  width: 100%;
+}
+
+.header .container {
+  height: 130px;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.head_text {
+  display: flex;
+  align-items: baseline;
+}
+
+.head_text h2 {
   font-size: 40px;
+  font-weight: 900;
+  margin-right: 9px;
+  transition: all 0.3s;
+}
+
+.head_text h2:hover {
+  color: rgb(135, 184, 230);
+}
+.head_text p {
+  color: #b7b7b7;
+}
+
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  width: 30%;
+  height: 100vh;
+  padding-top: 250px;
+  transition: all 0.5s;
   text-align: center;
-  line-height: 70px;
+  z-index: 10;
+}
+
+.nav.on {
+  left: 70%;
+  background: #fff;
+}
+
+.nav li a {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 2px solid #999;
+  transition: all 0.5s;
+}
+.nav li a:hover {
+  color: rgb(135, 184, 230);
+}
+
+/* hamburger bar */
+
+.bar {
+  position: fixed;
+  top: 60px;
+  right: 50px;
+  width: 56px;
+  height: 18px;
+  /* background: red; */
   cursor: pointer;
-  display: none;
-  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bar span::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #666;
+  transition: top 0.3s, transform 0.3s;
+}
+
+.bar span::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  height: 4px;
+  width: 80%;
+  background: #666;
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.bar.on span {
+  background: transparent;
+}
+.bar.on span::before {
+  top: 13px;
+  transform: rotate(-45deg);
+}
+.bar.on span::after {
+  width: 100%;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+/* 타이틀텍스트 */
+.title_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+}
+
+.title_text h3 {
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.title_text p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.4;
 }
 
 /* 페이지 */
