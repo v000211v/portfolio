@@ -57,7 +57,9 @@ body {
   display: block;
   text-align: center;
   padding: 50px 0;
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid #c4c4c4;
+  width: 90%;
+  margin: 0 auto;
   transition: all 0.5s;
 }
 .nav li a:hover {
@@ -139,7 +141,7 @@ body {
 .page {
   display: flex;
   justify-content: space-between;
-  margin: 150px 0 150px;
+  margin: 200px 0;
 }
 
 .page_pic img {
@@ -149,14 +151,22 @@ body {
 }
 
 .page_pic {
-  width: 910px;
+  border: 1px solid #c4c4c4;
+}
+
+.page_pic01 {
+  width: 50%;
   height: 550px;
-  background: #333;
+  background: url(../images/coding01.png) no-repeat center/ cover;
 }
 
 .page_text {
-  width: 670px;
+  width: 43%;
   margin: 50px 70px;
+}
+
+.page_text02 {
+  text-align: right;
 }
 
 .page_text h3 {
@@ -178,7 +188,14 @@ body {
   align-items: center;
 }
 
-.page .btn {
+.page .btns_right {
+  display: flex;
+  align-items: center;
+
+  float: right;
+}
+
+.page .btns_right .btn {
   border: 1px solid #555;
   width: 200px;
   height: 40px;
@@ -187,9 +204,22 @@ body {
   text-align: center;
   line-height: 40px;
   color: #555;
-  margin-right: 50px;
   background: #fff;
   transition: all 0.5s;
+  margin-left: 50px;
+}
+.page .btns .btn {
+  border: 1px solid #555;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  color: #555;
+  background: #fff;
+  transition: all 0.5s;
+  margin-right: 50px;
 }
 
 .page .btn:hover {

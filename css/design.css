@@ -83,7 +83,9 @@ body {
   display: block;
   text-align: center;
   padding: 50px 0;
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid #c4c4c4;
+  width: 90%;
+  margin: 0 auto;
   transition: all 0.5s;
 }
 
@@ -202,7 +204,7 @@ body {
 }
 
 .filter_btn.on::after {
-  width: 60px;
+  width: 100%;
   background: rgb(135, 184, 230);
 }
 
@@ -220,6 +222,7 @@ body {
   overflow: hidden;
   transition: all 0.3s;
   position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .grid-item img {
