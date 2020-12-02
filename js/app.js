@@ -1,3 +1,17 @@
+  // modal
+  $(function () {
+    $('.about').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#username',
+      modal: true
+    })
+    $(document).on('click', '.close', function (e) {
+      e.preventDefault()
+      $.magnificPopup.close()
+    })
+  })
+
 // 메뉴
 const bar = document.querySelector('.bar')
 const nav = document.querySelector('.nav')
@@ -21,6 +35,8 @@ link.forEach((item) => {
     modal.classList.add('open')
   })
 })
+
+
 
 // 헤더 스크립트
 var header = $('.header')
