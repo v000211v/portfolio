@@ -160,6 +160,18 @@ body {
   background: url(../images/coding01.png) no-repeat center/ cover;
 }
 
+.page_pic02 {
+  width: 50%;
+  height: 550px;
+  background: url(../images/coding02.png) no-repeat center/ cover;
+}
+
+.page_pic03 {
+  width: 50%;
+  height: 550px;
+  background: url(../images/coding03.png) no-repeat center / cover;
+}
+
 .page_text {
   width: 43%;
   margin: 50px 70px;
